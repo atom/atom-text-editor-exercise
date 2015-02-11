@@ -1,5 +1,3 @@
 # atom-text-editor-exercise package
 
-A short description of your package.
-
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![A screenshot of your package](![screen shot 2015-02-10 at 6 34 36 pm](https://cloud.githubusercontent.com/assets/69169/6140953/83e02388-b153-11e4-9fab-b9c63eade22b.png))
