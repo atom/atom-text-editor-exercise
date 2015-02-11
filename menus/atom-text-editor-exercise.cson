@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle atom-text-editor-exercise'
+      'command': 'atom-text-editor-exercise:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atom-text-editor-exercise'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'atom-text-editor-exercise:toggle'
+        }
+      ]
+    ]
+  }
+]
