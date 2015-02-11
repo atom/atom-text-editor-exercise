@@ -44,7 +44,7 @@ class AtomTextEditorExerciseView extends HTMLElement
       'core:confirm': (event) ->
         span = this.nextSibling.nextSibling.querySelector('span')
         span.textContent = parseInt(span.textContent) + 1
-        console.log 'Confirmed', this, event
+        console.log 'Confirmed', this, event, this.getModel().getText()
 
   getTitle: ->
     'TextEditor Exercise'
