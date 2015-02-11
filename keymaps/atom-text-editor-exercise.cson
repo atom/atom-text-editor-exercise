@@ -9,3 +9,6 @@
 # https://atom.io/docs/latest/advanced/keymaps
 'atom-workspace':
   'ctrl-alt-o': 'atom-text-editor-exercise:toggle'
+
+'atom-text-editor-exercise atom-text-editor:not(.mini)':
+  'cmd-enter': 'core:confirm'

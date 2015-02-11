@@ -10,12 +10,10 @@ module.exports = AtomTextEditorExercise =
     atom.workspace.addOpener (filePath) =>
       new AtomTextEditorExerciseView() if filePath is URI
 
-    # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     @subscriptions = new CompositeDisposable
-
-    # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace', 'atom-text-editor-exercise:toggle': => @toggle()
 
+    # Always show the pane for now. Need to open in a nextTick or things will break
     process.nextTick => @toggle()
 
   deactivate: ->
