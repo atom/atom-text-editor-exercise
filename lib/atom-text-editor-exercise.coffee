@@ -16,7 +16,7 @@ module.exports = AtomTextEditorExercise =
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace', 'atom-text-editor-exercise:toggle': => @toggle()
 
-    @toggle()
+    process.nextTick => @toggle()
 
   deactivate: ->
     @subscriptions?.dispose()
