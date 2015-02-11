@@ -3,13 +3,16 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
+@import "syntax-variables";
 
 atom-text-editor-exercise {
+  padding: @component-padding;
   background: @pane-item-background-color;
   color: @text-color;
 
   atom-text-editor {
-    background: white;
+    background: @syntax-background-color;
+    border: 1px solid darken(@syntax-background-color, 10%);
     height: 100px;
     margin: 20px 0;
     overflow: hidden;

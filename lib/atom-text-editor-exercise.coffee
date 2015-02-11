@@ -19,7 +19,7 @@ module.exports = AtomTextEditorExercise =
     @toggle()
 
   deactivate: ->
-    @subscriptions.dispose()
+    @subscriptions?.dispose()
 
   toggle: ->
     atom.workspace.open(URI, split: 'right')
